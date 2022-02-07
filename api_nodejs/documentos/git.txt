@@ -1,0 +1,52 @@
+Links dos projetos no github
+Aula 01 - Iniciando o projeto e criando endpoints
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula01
+
+
+
+Aula 02 - Trabalhando com rotas
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula02
+
+
+
+Aula 03 - Conectando mongodb com mongoose
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula03
+
+
+
+Aula 04 - Criando schemas do mongoose
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula04
+
+
+
+Aula 05 - Criptografia de campos de senha com bcrypt
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula05
+
+
+
+Aula 06 - Async await e o fim do callback hell
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula06
+
+
+
+Aula 07 - Autenticação com jwt (jsonwebtoken)
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula07
+
+
+
+Aula 08 - Retornando status codes apropriados
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula08
+
+
+
+Aula 09 - Configuração final do projeto
+
+https://github.com/dcpenteado/curso_iniciante_api_nodejs_aula09
