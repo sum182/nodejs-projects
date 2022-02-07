@@ -1,0 +1,1 @@
+mongodb+srv://usuario_admin:<password>@clusterapi.jtfyw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
