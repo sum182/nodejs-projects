@@ -1,0 +1,70 @@
+#case - exemplo de preço médio
+[{"operation":"buy", "unit-cost":20, "quantity": 10}, {"operation":"buy","unit-cost":10, "quantity": 5}]
+
+
+#case 1
+[{"operation":"buy", "unit-cost":10, "quantity": 100},{"operation":"sell", "unit-cost":15, "quantity": 50},{"operation":"sell", "unit-cost":15, "quantity": 50}]
+
+Saida
+[{"tax": 0},{"tax": 0},{"tax": 0}]
+
+
+
+
+#case 2
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},{"operation":"sell","unit-cost":20, "quantity": 5000},{"operation":"sell", "unit-cost":5, "quantity":5000}]
+
+
+Saida:
+[{"tax": 0},{"tax": 10000},{"tax": 0}]
+
+
+
+
+Caso #3
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},{"operation":"sell","unit-cost":5, "quantity": 5000},{"operation":"sell", "unit-cost":20, "quantity":5000}]
+
+Saida:
+[{"tax": 0},{"tax": 0},{"tax": 5000}]
+
+
+
+
+Caso #4
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},{"operation":"buy","unit-cost":25, "quantity": 5000},{"operation":"sell", "unit-cost":15,"quantity": 10000}]
+
+Saida:
+[{"tax": 0},{"tax": 0},{"tax": 0}]
+
+
+Caso #5
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},{"operation":"buy","unit-cost":25, "quantity": 5000},{"operation":"sell", "unit-cost":15,"quantity": 10000},{"operation":"sell", "unit-cost":25, "quantity": 5000}]
+
+Saida:
+[{"tax": 0},{"tax": 0},{"tax": 0},{"tax": 10000}]
+
+
+
+Caso #6
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},{"operation":"sell","unit-cost":2, "quantity": 5000},{"operation":"sell", "unit-cost":20, "quantity":2000},{"operation":"sell", "unit-cost":20, "quantity": 2000},{"operation":"sell","unit-cost":25, "quantity": 1000}]
+
+Saida:
+[{"tax": 0},{"tax": 0},{"tax": 0},{"tax": 0},{"tax": 3000}]
+
+
+
+
+[{"operation":"buy", "unit-cost":10, "quantity": 10000}, {"operation":"sell","unit-cost":20, "quantity": 5000}]
+
+
+
+
+#erros na leitura do JSON
+[{"operation":"buy", "unit-cost":10, "quantity": 10000},
+ {"operation":"sell","unit-cost":20, "quantity": 5000}]
+
+
+
+
+[{"operation":"buy", "unit-cost":10, "quantity": 10000}, {"operation":"sell",
+"unit-cost":20, "quantity": 5000}]
