@@ -8,8 +8,7 @@ function TestNumbers(){
     console.log('');
     libsmStrings.logConsoleHighlighted('Testando Numbers');   
     console.log('var nota = ' + nota);
-    console.log('var nota2 = '+ nota2);
-    
+    console.log('var nota2 = '+ nota2);    
     console.log('nota.toExponential(2): ' + nota.toExponential(2));
     console.log('nota.toFixed(2): ' + nota.toFixed(2));
     console.log('nota.toPrecision(1): ' + nota.toPrecision(1));

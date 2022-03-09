@@ -2,6 +2,8 @@ const libsmStrings = require('./../../../lib/sum182/smStrings');
 const numbers = require('./numbers');
 const strings = require('./strings');
 const booleans = require('./boolean');
+const objects = require('./objects');
+const functions = require('./functions');
 
 
 function main(){
@@ -13,11 +15,14 @@ function main(){
         numbers.TestNumbers();  
         strings.TestStrings();
         booleans.TestBoolean();
+        objects.TestObjects();
+        functions.TestFunctions();
 
         console.log('');
 
     } catch (error) {
         console.log('Erro ao relizar processamento!');
+        console.log(error);
 
         
     }
