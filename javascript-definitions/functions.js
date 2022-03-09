@@ -97,7 +97,183 @@ function TestFunctions(){
     console.log("getIdade3.call(pessoa,2) = " + getIdade3.call(pessoa,2));
     console.log("getIdade3.apply(pessoa, [2]) = " + getIdade3.apply(pessoa, [2]));
     
+    //criar Objetos com funções
+    console.log("");
+    console.log("criar Objetos com funções");
+
+    var criarPessoa = function(nome, idade){
+        return {
+            nome: nome,
+            idade: idade
+        };
+    };
     
+    console.log("");
+    console.log("criarPessoa(Pedro,20) = ");
+    console.log(criarPessoa("Pedro",20));
+    
+    console.log("");
+    console.log("criarPessoa(Maria,30) = ");
+    console.log(criarPessoa("Maria",30));
+
+
+    var Pessoa2 = function (nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    console.log("");
+    console.log("new Pessoa2(Pedro, 20) = "); 
+    console.log(new Pessoa2("Pedro", 20));
+
+    console.log("");
+    console.log("new Pessoa2(Maria, 30) = ");
+    console.log(new Pessoa2("Maria", 30));
+
+    var pedro = {};
+    Pessoa2.call(pedro, "Pedro", 20);
+    console.log("");
+    console.log("pedro = "); 
+    console.log(pedro);
+
+    //Closures
+    var helloWorld2 = function (){
+        var message = "Hello World!";
+        return function (){
+            return message;
+        };
+    };
+
+
+     //criar Objetos com funções
+     console.log("");
+     console.log("Closures");
+
+     var fnHelloWorld = helloWorld2();
+     console.log("fnHelloWorld = ");
+     console.log(fnHelloWorld());
+
+     console.log("");
+     console.log("helloWorld2 = ");
+     console.log(helloWorld2);
+
+     console.log("");
+     console.log("helloWorld2() = ");
+     console.log(helloWorld2());
+
+     console.log("");
+     console.log("helloWorld2()() = ");
+     console.log(helloWorld2()());
+
+
+     console.log("Encapsulamento");
+
+     var counter = {
+         value: 0,
+         add: function(){
+             return ++ this.value;
+         }
+     };
+
+     console.log("");
+     console.log("counter.add())");
+     console.log(counter.add());
+     console.log("counter.add())");
+     console.log(counter.add());
+     console.log("counter.add())");
+     console.log(counter.add());
+
+     var itens = {
+        value: [],
+         add: function(item){
+             this.value.push(item);
+             return this.value;
+         }
+     };
+
+     console.log("");
+     console.log("itens.add('A')");
+     console.log(itens.add('A'));
+     
+     console.log("");
+     console.log("itens.add('B')");
+     console.log(itens.add('B'));
+     
+     console.log("");
+     console.log("itens.add('C')");
+     console.log(itens.add('C'));
+     
+     var Counter = function(){
+         var value = 0;
+         this.add = function (){
+             return ++ value;
+         }
+     };
+
+
+     var counter = new Counter();
+     console.log("");
+     console.log("counter.value");
+     console.log(counter.value);
+
+     
+     console.log("");
+     console.log("counter.add()");
+     console.log(counter.add());
+
+     console.log("");
+     console.log("counter.add()");
+     console.log(counter.add());
+
+     console.log("");
+     console.log("counter.add()");
+     console.log(counter.add());
+
+
+     var counter2 = ( function(){
+        var _value = 0;
+        
+        var _add = function (){
+            return ++ _value;
+        }
+        
+        var _reset = function (){
+            _value = 0 ;
+        }
+
+        return {
+            add: _add,
+            reset: _reset
+        };
+        
+    })();
+
+    console.log("");
+    console.log("counter2.value");
+    console.log(counter2.value);
+
+    
+    console.log("");
+    console.log("counter2.add()");
+    console.log(counter2.add());
+
+    console.log("");
+    console.log("counter2.add()");
+    console.log(counter2.add());
+
+    console.log("");
+    console.log("counter2.add()");
+    console.log(counter2.add());
+
+    console.log("");
+    console.log("counter2.reset()");
+    counter2.reset();
+
+    console.log("");
+    console.log("counter2.add()");
+    console.log(counter2.add());
+
+
 }
 
 module.exports = {
