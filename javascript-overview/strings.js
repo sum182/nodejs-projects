@@ -1,6 +1,6 @@
 const libsmStrings = require('./../../../lib/sum182/smStrings');
 
-function TestStrings(){
+function testStrings(){
     var nome = "AgileCode";
 
     console.log('');
@@ -17,5 +17,5 @@ function TestStrings(){
 }
 
 module.exports = {
-    TestStrings
+    testStrings
 }

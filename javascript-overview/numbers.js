@@ -1,7 +1,7 @@
 const libsmStrings = require('./../../../lib/sum182/smStrings');
 
 
-function TestNumbers(){
+function testNumbers(){
     var nota = 10;
     var nota2 = 8.5;
 
@@ -20,5 +20,5 @@ function TestNumbers(){
 
 
 module.exports = {
-    TestNumbers
+    testNumbers
 }

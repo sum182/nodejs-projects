@@ -4,6 +4,9 @@ const strings = require('./strings');
 const booleans = require('./boolean');
 const objects = require('./objects');
 const functions = require('./functions');
+const arrays = require('./arrays');
+const regex = require('./regex');
+
 
 
 function main(){
@@ -12,11 +15,17 @@ function main(){
         libsmStrings.logConsoleHighlighted('App javascript-definitions em execução');
         console.log('');
 
-        numbers.TestNumbers();  
-        strings.TestStrings();
-        booleans.TestBoolean();
-        objects.TestObjects();
-        functions.TestFunctions();
+        /*
+        numbers.testNumbers();  
+        strings.testStrings();
+        booleans.testBoolean();
+        objects.testObjects();
+        functions.testFunctions();
+        arrays.testArrays();
+        */
+
+        regex.testRegex();
+        
 
         console.log('');
 

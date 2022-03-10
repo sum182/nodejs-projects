@@ -1,6 +1,6 @@
 const libsmStrings = require('./../../../lib/sum182/smStrings');
 
-function TestBoolean(){
+function testBoolean(){
     var nome = "AgileCode";
     var nota = 10;
     var Lista = {};
@@ -31,5 +31,5 @@ function TestBoolean(){
 
 
 module.exports = {
-    TestBoolean
+    testBoolean
 }

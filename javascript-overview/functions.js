@@ -12,7 +12,7 @@ var somarExpressionNamed = function(a,b){
     return a + b;
 }
 
-function TestFunctions(){
+function testFunctions(){
 
     console.log('');
     libsmStrings.logConsoleHighlighted('Testando Functions');   
@@ -277,5 +277,5 @@ function TestFunctions(){
 }
 
 module.exports = {
-    TestFunctions
+    testFunctions
 }

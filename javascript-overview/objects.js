@@ -1,6 +1,6 @@
 const libsmStrings = require('./../../../lib/sum182/smStrings');
 
-function TestObjects(){
+function testObjects(){
     var pessoa = {};
 
     console.log('');
@@ -31,6 +31,6 @@ function TestObjects(){
 }
 
 module.exports = {
-    TestObjects
+    testObjects
 }
 
