@@ -22,9 +22,10 @@ function main(){
         objects.testObjects();
         functions.testFunctions();
         arrays.testArrays();
+        regex.testRegex();
         */
 
-        regex.testRegex();
+        
         
 
         console.log('');

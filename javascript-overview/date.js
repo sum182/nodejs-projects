@@ -5,7 +5,7 @@ function testDates (){
     libsmStrings.logConsoleHighlighted('Testando Dates');   
     console.log("");
 
-    
+    //
 
 
    
