@@ -6,7 +6,8 @@ const objects = require('./objects');
 const functions = require('./functions');
 const arrays = require('./arrays');
 const regex = require('./regex');
-
+const date = require('./date');
+const operadores = require('./operadores');
 
 
 function main(){
@@ -23,8 +24,11 @@ function main(){
         functions.testFunctions();
         arrays.testArrays();
         regex.testRegex();
+        date.testDates();
         */
 
+        operadores.testOperadores();
+        
         
         
 
